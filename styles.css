@@ -19,11 +19,17 @@ header{
     height: 15%;
     background-color: darkgrey;
     padding: 10px;
+    margin-bottom: 3px;
 
 }
 
 #heading-xml{
     padding-left: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    -webkit-text-fill-color: aliceblue;
+    -webkit-text-stroke-width: 2px;
 }
 
 main{
@@ -41,7 +47,30 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     height: 50%;
+    width: 80%;
+
+}
+
+#search-heading{
+    margin: 5px;
+    
+}
+
+#search-bar{
+
+    
+}
+
+#search-button-wrapper{
+    margin: 5px;
+    margin-left: 0;
+    
+}
+
+#search-button{
+    width: 100px
 
 }
 
@@ -62,6 +91,20 @@ footer{
     height: 10%;
     background-color: darkgrey;
     padding: 5px;
+    margin-top: 3px;
+}
+
+#nextpage-anchor{
+    padding-left: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    font-style: normal;
+    text-decoration: none;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+
 }
 
 
