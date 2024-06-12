@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+    <product>
+        <category>Cheese</category>
+        <code>201-01</code>
+        <name>Camembert</name>
+        <description>A rustic french camembert from northern France</description>
+        <quantity>100</quantity>
+        <price>4.25</price>
+    </product>
+    <product>
+        <category>Cheese</category>
+        <code>201-02</code>
+        <name>Brie</name>
+        <description>A floral Brie from Northern France</description>
+        <quantity>200</quantity>
+        <price>5.50</price>
+    </product>
+    <product>
+        <category>Cheese</category>
+        <code>201-03</code>
+        <name>Comte</name>
+        <description>A nutty and sweet Comte from the French Alps</description>
+        <quantity>125</quantity>
+        <price>5.50</price>
+    </product>
+    <product>
+        <category>Cheese</category>
+        <code>201-04</code>
+        <name>Parmigiano</name>
+        <description>An aged parmigiano from the Emilia Romagna, Italy</description>
+        <quantity>75</quantity>
+        <price>7.00</price>
+    </product>
+    <product>
+        <category>Cheese</category>
+        <code>201-05</code>
+        <name>Cashel Blue</name>
+        <description>A flavoursome blue cheese from Tipperary, Ireland</description>
+        <quantity>200</quantity>
+        <price>3.50</price>
+    </product>
+    <product>
+        <category>Meat</category>
+        <code>202-01</code>
+        <name>Serrano Ham</name>
+        <description>A flavorsome ham from Spain</description>
+        <quantity>250</quantity>
+        <price>4.00</price>
+    </product>
+    <product>
+        <category>Meat</category>
+        <code>202-02</code>
+        <name>Chorizo</name>
+        <description>An spicy chorizo from Spain</description>
+        <quantity>150</quantity>
+        <price>3.50</price>
+    </product>
+    <product>
+        <category>Meat</category>
+        <code>202-03</code>
+        <name>Prosciutto de Parma</name>
+        <description>A flavoursome cooked ham from Emilia Romagna, Italy</description>
+        <quantity>300</quantity>
+        <price>4.00</price>
+    </product>
+    <product>
+        <category>Pantry</category>
+        <code>203-01</code>
+        <name>Plain Cracker</name>
+        <description>A neutral cracker to pair with cheese or meats</description>
+        <quantity>400</quantity>
+        <price>3.50</price>
+    </product>
+    <product>
+        <category>Pantry</category>
+        <code>203-02</code>
+        <name>Seeded Cracker</name>
+        <description>A cracker with the subtle flavour of mixed seeds</description>
+        <quantity>300</quantity>
+        <price>3.75</price>
+    </product>
+</catalog>
