@@ -1,3 +1,5 @@
+/* CSS for all Pages */
+
 html{
     height: 100%;
     box-sizing: border-box;
@@ -23,15 +25,6 @@ header{
 
 }
 
-#heading-xml{
-    padding-left: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 30px;
-    font-weight: 900;
-    -webkit-text-fill-color: aliceblue;
-    -webkit-text-stroke-width: 2px;
-}
-
 main{
     display: flex;
     flex-direction: column;
@@ -42,6 +35,33 @@ main{
     padding: 20px;
 
 }
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    height: 10%;
+    background-color: darkgrey;
+    padding: 5px;
+    margin-top: 3px;
+}
+
+/* CSS for index */
+
+
+
+/* CSS for XML page */
+
+#heading-xml{
+    padding-left: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    -webkit-text-fill-color: aliceblue;
+    -webkit-text-stroke-width: 2px;
+}
+
 
 #search{
     display: flex;
@@ -55,11 +75,12 @@ main{
 
 #search-heading{
     margin: 5px;
+    color: white;
     
 }
 
 #search-bar{
-
+    height: 50px;
     
 }
 
@@ -83,16 +104,6 @@ main{
     background-color: azure;
 }
 
-footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    align-items: center;
-    height: 10%;
-    background-color: darkgrey;
-    padding: 5px;
-    margin-top: 3px;
-}
 
 #nextpage-anchor{
     padding-left: 20px;
@@ -106,5 +117,7 @@ footer{
     -webkit-text-stroke-width: 1px;
 
 }
+
+/* CSS for JSON page */
 
 
