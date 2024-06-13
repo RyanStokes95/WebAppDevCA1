@@ -78,7 +78,9 @@ function searchDisplay(code, array) {
             productFound = true;
         }
     }
+    //Second if statement which will activate when the product is not found
     if (productFound == false) {
+        //Message displayed to the user
         productInfo = `
                     <div id="data">
                         <h2>No Product Found</h2>
