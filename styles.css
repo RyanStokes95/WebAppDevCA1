@@ -19,19 +19,20 @@ header{
     flex-direction: row;
     align-items: center;
     height: 15%;
-    background-color: darkgrey;
+    background-color: white;
     padding: 10px;
     margin-bottom: 3px;
 
 }
 
 main{
+    background-image: url(images/xavier-von-erlach-AU2goNvfyWU-unsplash.jpg);
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 75%;
-    background-color: slategrey;
     padding: 20px;
 
 }
@@ -42,7 +43,7 @@ footer{
     justify-content: left;
     align-items: center;
     height: 10%;
-    background-color: darkgrey;
+    background-color: white;
     padding: 5px;
     margin-top: 3px;
 }
@@ -54,12 +55,10 @@ footer{
 /* CSS for XML page */
 
 #heading-xml{
-    padding-left: 20px;
+    padding-left: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
-    font-weight: 900;
-    -webkit-text-fill-color: aliceblue;
-    -webkit-text-stroke-width: 2px;
+    text-decoration: double;
 }
 
 
@@ -73,15 +72,22 @@ footer{
 
 }
 
+#search-xml{
+    font-size: 17px;
+    height: 28px;
+}
+
 #search-heading{
+    background-color: black;
+    padding: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 5px;
     color: white;
     
 }
 
 #search-bar{
-    height: 50px;
-    
+    height: 50px;    
 }
 
 #search-button-wrapper{
@@ -100,21 +106,33 @@ footer{
     flex-direction: column;
     justify-content: center;
     height: 50%;
-    width: 80%;
-    background-color: azure;
+    width: fit-content;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
+#data{
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.product-info{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#next-page{
+    width: 80px;
+    background-color: white;
+    text-align: center;
+}
 
 #nextpage-anchor{
-    padding-left: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 15px;
     color: black;
     font-style: normal;
     text-decoration: none;
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke-width: 1px;
 
 }
 

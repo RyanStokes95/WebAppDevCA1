@@ -55,25 +55,36 @@ function parseXML(xmlDoc) {
 
 //Function which searches for the product code and returns the product info if it is found
 function searchDisplay(code, array) {
+    var productFound = false;
+    var productInfo;
+    var xmlSection = document.getElementById("xml-file");
     //Loop which iterates through the products array
     for (let i = 0; i < array.length; i++) {
         var product = array[i];
         //If statement which checks if the entered code matches the code of the product being iterated over
         if (code == product.code) {
-            var xmlSection = document.getElementById("xml-file");
             //Product info which is inserted into the DOM
-            var productInfo = `
-                <div>
-                    <h3>${product.name}</h3>
-                    <p><strong>Category:</strong> ${product.category}</p>
-                    <p><strong>Code:</strong> ${product.code}</p>
-                    <p><strong>Description:</strong> ${product.description}</p>
-                    <p><strong>Quantity:</strong> ${product.quantity}</p>
-                    <p><strong>Price:</strong> ${product.price}</p>
+            productInfo = `
+                <div id="data">
+                    <h2>${product.name}</h2>
+                    <p class="product-info"><strong>Category:</strong> ${product.category}</p>
+                    <p class="product-info"><strong>Code:</strong> ${product.code}</p>
+                    <p class="product-info"><strong>Description:</strong> ${product.description}</p>
+                    <p class="product-info"><strong>Quantity:</strong> ${product.quantity}</p>
+                    <p class="product-info"><strong>Price:</strong> ${product.price}</p>
                 </div>
             `;
             xmlSection.innerHTML = productInfo;
+            productFound = true;
         }
+    }
+    if (productFound == false) {
+        productInfo = `
+                    <div id="data">
+                        <h2>No Product Found</h2>
+                    </div>
+                `;
+        xmlSection.innerHTML = productInfo;
     }
 }
 
