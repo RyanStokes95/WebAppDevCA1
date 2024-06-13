@@ -135,11 +135,11 @@ footer{
 }
 
 #github{
-    color: black;
+    color: gray;
 }
 
 #github:hover{
-    color: grey;
+    color: black;
 }
 
 #index-footer-text{
