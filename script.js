@@ -1,3 +1,4 @@
+//XML Sccript
 function loadXMLDoc(url, callback){
     //Creation of XMLHttpRequest object to pull data from xml file
     var xhr = new XMLHttpRequest();
@@ -103,5 +104,32 @@ window.onload = function() {
             var searchCode = searchBox.value;
             searchDisplay(searchCode, productList);
         })
+    })
+}
+
+//JSON Script
+
+//API Key
+const apiKey = "16b1c57445a5291a35194957ebf71d26";
+
+const city = "Dublin";
+const apiUrl = "http://api.openweathermap.org/data/2.5/weather";
+
+function weatherDisplay(city){
+    const url = "${apiUrl}?mode=json&q=${city}&appid=${apiKey}";
+    
+    fetch(url).then(
+        response => {
+            if (!response.ok) {
+                throw new Error("HTTP error! Status: ${response.status}");
+            }
+            return response.json();
+        }
+    )
+    .then(data => {
+        var temperature = data.main.temp;
+        var humidity = data.main.humidity;
+        var pressure = data.main.pressure;
+        var description = data.main.description;
     })
 }
