@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="script.js"></script>
+    <script src="script.js" async></script>
     <script src="https://kit.fontawesome.com/d8fa2073a1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
@@ -17,8 +17,18 @@
             <a href="index.html"><i class="fa-solid fa-house" id="home"></i></a>
         </div>
     </header>
-    <main id="JSON-main">
-
+    <main id="JSON-main-wrapper">
+        <div id="search-wrapper">
+            <textarea id="weather-search"></textarea>
+            <button id="weather-search-button">Search</button>
+        </div>
+        <div id="JSON-main">
+            <h3 id="city">test</h3>
+            <p class="weather-info" id="temperature">test</p>
+            <p class="weather-info" id="humidity">test</p>
+            <p class="weather-info" id="pressure">test</p>
+            <p class="weather-info" id="description">test</p>
+        </div>
     </main>
     <footer id="footer">
         <p id="index-footer-text">Ryan Stokes - x21242691</p>

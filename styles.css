@@ -283,4 +283,19 @@ footer{
 
 /* CSS for JSON page */
 
+#JSON-main-wrapper{
+    background-image: url(images/codioful-formerly-gradienta-QWutu2BRpOs-unsplash.jpg);
+    background-size: cover;
+}
 
+#JSON-main{
+    background-size: cover;
+    background-color: rgb(255, 255, 255,0.8);
+    background-image: none;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-width: 2px;
+    width: 85%;
+    height: 85%;
+    padding: 10px;
+}
