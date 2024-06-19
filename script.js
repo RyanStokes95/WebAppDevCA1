@@ -105,15 +105,17 @@ window.onload = function() {
             searchDisplay(searchCode, productList);
         })
     })
+    weather(city, url)
 }
 
 //JSON Script
 
 var city = "London"
 var apiKey = "16b1c57445a5291a35194957ebf71d26"
-const url = `https://api.openweathermap.org/data/2.5/weather?q=${city},uk&appid=${apiKey}&units=metric`
+var url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
 
-fetch(url)
+function weather(city, url){
+    fetch(url)
     .then(response => {
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
@@ -135,5 +137,17 @@ fetch(url)
     .catch(error => {
         console.error('There was a problem with the fetch operation:', error);
     });
+}
+var weatherSearchBox = document.getElementById("weather-search");
+var weatherSearchButton = document.getElementById("weather-search-button");
+weatherSearchButton.addEventListener("click", newCity);
+
+
+function newCity(){
+    city = weatherSearchBox.value;
+    apiKey = "16b1c57445a5291a35194957ebf71d26";
+    url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    weather(city, url)
+}
 
         

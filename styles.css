@@ -288,6 +288,44 @@ footer{
     background-size: cover;
 }
 
+#search-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#weather-search{
+    width: 400px;
+    height: 40px;
+    resize: none;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 0;
+    font-size: 20px;
+}
+
+#weather-search-button{
+    margin-top: 20px;
+    width: 100px;
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    height: 30px;
+}
+
+#city{
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.weather-info{
+    font-size: 27px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
 #JSON-main{
     background-size: cover;
     background-color: rgb(255, 255, 255,0.8);
