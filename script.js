@@ -105,29 +105,37 @@ window.onload = function() {
             searchDisplay(searchCode, productList);
         })
     })
-    weather(city, url)
 }
 
 //JSON Script
+var errorMess = document.getElementById("error");
+errorMess.style.display = "none"
 
-var city = "London"
-var apiKey = "16b1c57445a5291a35194957ebf71d26"
-var url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
+var city;
+var apiKey = "16b1c57445a5291a35194957ebf71d26";
+var url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
 function weather(city, url){
+    //GET request for weather information
     fetch(url)
     .then(response => {
+        //If statement to throw error if data is not got successfully
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
+        //Upon successful retrieval of info it is parsed to JSON
         return response.json();
     })
+    //Assigning variable the parsed data
     .then(data => {
         var temperature = data.main.temp;
         var humidity = data.main.humidity;
         var pressure = data.main.pressure;
         var description = data.weather[0].description;
 
+        document.getElementById("error").style.display = "none"
+
+        //Displaying the data on the page
         document.getElementById("city").innerHTML = `${city}`
         document.getElementById("temperature").innerHTML = `Temperature: ${temperature}&deg C`;
         document.getElementById("humidity").innerHTML = `Humidity: ${humidity}%`;
@@ -136,15 +144,22 @@ function weather(city, url){
     })
     .catch(error => {
         console.error('There was a problem with the fetch operation:', error);
+        errorMess.innerHTML = "Enter a valid city name!"
+        errorMess.style.display = "block"
     });
 }
+
+//Assigning variables to the text input and search button
 var weatherSearchBox = document.getElementById("weather-search");
 var weatherSearchButton = document.getElementById("weather-search-button");
+//Event listener to load the searched city's weather data
 weatherSearchButton.addEventListener("click", newCity);
 
-
+//Function which fetches the searched city's weather data
 function newCity(){
-    city = weatherSearchBox.value;
+    var uncappedString = weatherSearchBox.value
+    var cappedString = uncappedString.charAt(0).toUpperCase() + uncappedString.slice(1);
+    city = cappedString;
     apiKey = "16b1c57445a5291a35194957ebf71d26";
     url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     weather(city, url)

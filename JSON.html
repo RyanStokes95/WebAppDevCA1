@@ -19,11 +19,13 @@
     </header>
     <main id="JSON-main-wrapper">
         <div id="search-wrapper">
-            <textarea id="weather-search"></textarea>
+            <h3 id="prompt">Enter City Name:</h3>
+            <p id="error"></p>
+            <textarea id="weather-search" spellcheck="false"></textarea>
             <button id="weather-search-button">Search</button>
         </div>
         <div id="JSON-main">
-            <h2 id="city"></h2>
+            <h2 id="city">No City Selected</h2>
             <p class="weather-info" id="temperature"></p>
             <p class="weather-info" id="humidity"></p>
             <p class="weather-info" id="pressure"></p>
