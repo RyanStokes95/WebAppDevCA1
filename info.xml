@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+info.xml 
+Ryan Stokes
+25/06/24
+-->
 <catalog>
     <product>
-        <category>Cheese</category>
+        <category code = "201-01">Cheese</category>
         <code>201-01</code>
         <name>Camembert</name>
         <description>A rustic french camembert from northern France</description>
@@ -9,7 +14,7 @@
         <price>4.25</price>
     </product>
     <product>
-        <category>Cheese</category>
+        <category code = "201-02">Cheese</category>
         <code>201-02</code>
         <name>Brie</name>
         <description>A floral Brie from Northern France</description>
@@ -17,7 +22,7 @@
         <price>5.50</price>
     </product>
     <product>
-        <category>Cheese</category>
+        <category code = "201-03">Cheese</category>
         <code>201-03</code>
         <name>Comte</name>
         <description>A nutty and sweet Comte from the French Alps</description>
@@ -25,7 +30,7 @@
         <price>5.50</price>
     </product>
     <product>
-        <category>Cheese</category>
+        <category code = "201-04">Cheese</category>
         <code>201-04</code>
         <name>Parmigiano</name>
         <description>An aged parmigiano from the Emilia Romagna, Italy</description>
@@ -33,7 +38,7 @@
         <price>7.00</price>
     </product>
     <product>
-        <category>Cheese</category>
+        <category code = "201-05">Cheese</category>
         <code>201-05</code>
         <name>Cashel Blue</name>
         <description>A flavoursome blue cheese from Tipperary, Ireland</description>
@@ -41,7 +46,7 @@
         <price>3.50</price>
     </product>
     <product>
-        <category>Meat</category>
+        <category code = "202-01">Meat</category>
         <code>202-01</code>
         <name>Serrano Ham</name>
         <description>A flavorsome ham from Spain</description>
@@ -49,7 +54,7 @@
         <price>4.00</price>
     </product>
     <product>
-        <category>Meat</category>
+        <category code = "202-02">Meat</category>
         <code>202-02</code>
         <name>Chorizo</name>
         <description>An spicy chorizo from Spain</description>
@@ -57,7 +62,7 @@
         <price>3.50</price>
     </product>
     <product>
-        <category>Meat</category>
+        <category code = "202-03">Meat</category>
         <code>202-03</code>
         <name>Prosciutto de Parma</name>
         <description>A flavoursome cooked ham from Emilia Romagna, Italy</description>
@@ -65,7 +70,7 @@
         <price>4.00</price>
     </product>
     <product>
-        <category>Pantry</category>
+        <category code = "203-01">Pantry</category>
         <code>203-01</code>
         <name>Plain Cracker</name>
         <description>A neutral cracker to pair with cheese or meats</description>
@@ -73,7 +78,7 @@
         <price>3.50</price>
     </product>
     <product>
-        <category>Pantry</category>
+        <category code = "203-02">Pantry</category>
         <code>203-02</code>
         <name>Seeded Cracker</name>
         <description>A cracker with the subtle flavour of mixed seeds</description>

@@ -1,3 +1,9 @@
+/*
+script.js
+Ryan Stokes
+25/06/24
+*/
+
 //XML Sccript
 function loadXMLDoc(url, callback){
     //Creation of XMLHttpRequest object to pull data from xml file
@@ -113,6 +119,7 @@ errorMess.style.display = "none"
 
 var city;
 var apiKey = "16b1c57445a5291a35194957ebf71d26";
+//API url
 var url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
 function weather(city, url){
@@ -142,8 +149,10 @@ function weather(city, url){
         document.getElementById("pressure").innerHTML = `Pressure: ${pressure} hPa`;
         document.getElementById("description").innerHTML = `Description: ${description}`;
     })
+    //catch statement for errors
     .catch(error => {
         console.error('There was a problem with the fetch operation:', error);
+        //Error message if invalid city name is entered
         errorMess.innerHTML = "Enter a valid city name!"
         errorMess.style.display = "block"
     });
@@ -157,11 +166,14 @@ weatherSearchButton.addEventListener("click", newCity);
 
 //Function which fetches the searched city's weather data
 function newCity(){
+    //Code to capitalise city name for display purposes
     var uncappedString = weatherSearchBox.value
     var cappedString = uncappedString.charAt(0).toUpperCase() + uncappedString.slice(1);
     city = cappedString;
+
     apiKey = "16b1c57445a5291a35194957ebf71d26";
     url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    
     weather(city, url)
 }
 

@@ -1,4 +1,11 @@
+/* 
+styles.css
+Ryan Stokes
+25/06/24
+*/
+
 /* All images used are royalty free and sourced from unsplash.com
+/* Flexbox has been utilised to add responsivity to the web application */
 /* CSS for all Pages */
 
 html{
@@ -312,6 +319,7 @@ footer{
 
 #error{
     margin-top: 0;
+    color: rgb(255, 0, 0);
 }
 
 #weather-search-button{
@@ -324,7 +332,7 @@ footer{
 }
 
 #city{
-    text-align: center;
+    text-align: left;
     font-size: 40px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
